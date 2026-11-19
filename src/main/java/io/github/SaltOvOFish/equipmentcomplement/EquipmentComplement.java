@@ -122,16 +122,16 @@ public class EquipmentComplement {
         addVariant(output, SpearRegistry.CANDC_SILVER_SPEAR);
         addVariant(output, SpearRegistry.OREGANIZED_ELECTRUM_SPEAR);
         addVariant(output, SpearRegistry.CANDC_NECROMIUM_SPEAR);
-        addVariant(output, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
-        addVariant(output, SpearRegistry.CURIOSITIES_INVAR_SPEAR);
+//        addVariant(output, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
+//        addVariant(output, SpearRegistry.CURIOSITIES_INVAR_SPEAR);
         addVariant(output, SpearRegistry.LEGENDARY_MONSTERS_ENDERITIUM_SPEAR);
 
         // ---------- 2. 马铠（不含更好的末地）----------
         addVariant(output, HorseArmorRegistry.CHAINMAIL_HORSE_ARMOR);
         addVariant(output, HorseArmorRegistry.SILVER_HORSE_ARMOR);
         addVariant(output, HorseArmorRegistry.ELECTRUM_HORSE_ARMOR);
-        addVariant(output, HorseArmorRegistry.ALUMINUM_HORSE_ARMOR);
-        addVariant(output, HorseArmorRegistry.INVAR_HORSE_ARMOR);
+//        addVariant(output, HorseArmorRegistry.ALUMINUM_HORSE_ARMOR);
+//        addVariant(output, HorseArmorRegistry.INVAR_HORSE_ARMOR);
         addVariant(output, HorseArmorRegistry.SANGUINE_HORSE_ARMOR);
 
         // ---------- 3. 鹦鹉螺铠（不含更好的末地）----------
@@ -151,8 +151,8 @@ public class EquipmentComplement {
         addVariant(output, NautilusArmorRegistry.CANDC_SILVER_NAUTILUS_ARMOR);
         addVariant(output, NautilusArmorRegistry.OREGANIZED_ELECTRUM_NAUTILUS_ARMOR);
         addVariant(output, NautilusArmorRegistry.CANDC_NECROMIUM_NAUTILUS_ARMOR);
-        addVariant(output, NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR);
-        addVariant(output, NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR);
+//        addVariant(output, NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR);
+//        addVariant(output, NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR);
         addVariant(output, NautilusArmorRegistry.SANGUINE_NAUTILUS_ARMOR);
 
         // ---------- 4. VanillaBackport 铜制品的氧化 / 涂蜡变体 ----------

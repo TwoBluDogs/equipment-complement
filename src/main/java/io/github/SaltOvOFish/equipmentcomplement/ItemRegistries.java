@@ -16,7 +16,7 @@ public final class ItemRegistries {
     public static final DeferredRegister.Items OREGANIZED = DeferredRegister.createItems("oreganized");
     public static final DeferredRegister.Items BETTEREND = DeferredRegister.createItems("betterend");
     public static final DeferredRegister.Items CAVERNS_AND_CHASMS = DeferredRegister.createItems("caverns_and_chasms");
-    public static final DeferredRegister.Items CURIOSITIES = DeferredRegister.createItems("curiosities");
+//    public static final DeferredRegister.Items CURIOSITIES = DeferredRegister.createItems("curiosities");
     public static final DeferredRegister.Items LEGENDARY_MONSTERS = DeferredRegister.createItems("legendary_monsters");
 
     private ItemRegistries() {
@@ -27,7 +27,7 @@ public final class ItemRegistries {
         OREGANIZED.register(modEventBus);
         BETTEREND.register(modEventBus);
         CAVERNS_AND_CHASMS.register(modEventBus);
-        CURIOSITIES.register(modEventBus);
+//        CURIOSITIES.register(modEventBus);
         LEGENDARY_MONSTERS.register(modEventBus);
     }
 }

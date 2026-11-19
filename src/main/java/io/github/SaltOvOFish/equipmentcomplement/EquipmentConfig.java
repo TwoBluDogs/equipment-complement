@@ -57,8 +57,8 @@ public class EquipmentConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_TERMINITE_SPEAR_HEAD;
     public static final ModConfigSpec.BooleanValue ENABLE_AETERNIUM_SPEAR;
     public static final ModConfigSpec.BooleanValue ENABLE_AETERNIUM_SPEAR_HEAD;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_SPEAR;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_SPEAR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_SPEAR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_SPEAR;
     public static final ModConfigSpec.BooleanValue ENABLE_LEGENDARY_MONSTERS_ENDERITIUM_SPEAR;
 
     // ==================== 马铠（armor.horse_armor） ====================
@@ -69,8 +69,8 @@ public class EquipmentConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_TERMINITE_HORSE_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_CRYSTALITE_HORSE_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_AETERNIUM_HORSE_ARMOR;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_CANDC_SANGUINE_HORSE_ARMOR;
 
     // ==================== 鹦鹉螺铠（armor.nautilus_armor） ====================
@@ -85,8 +85,8 @@ public class EquipmentConfig {
     public static final ModConfigSpec.BooleanValue ENABLE_TERMINITE_NAUTILUS_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_CRYSTALITE_NAUTILUS_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_AETERNIUM_NAUTILUS_ARMOR;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR;
-    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR;
+//    public static final ModConfigSpec.BooleanValue ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR;
     public static final ModConfigSpec.BooleanValue ENABLE_CANDC_SANGUINE_NAUTILUS_ARMOR;
 
     static {
@@ -244,18 +244,18 @@ public class EquipmentConfig {
                 .define("aeternium_spear", true);
         ENABLE_AETERNIUM_SPEAR_HEAD = builder
                 .define("aeternium_spear_head", true);
-        ENABLE_CURIOSITIES_ALUMINUM_SPEAR = builder
-                .comment("是否注册 Curiosities 铝矛",
-                        " Whether to register the Curiosities aluminum spear",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_aluminum_spear", true);
-        ENABLE_CURIOSITIES_INVAR_SPEAR = builder
-                .comment("是否注册 Curiosities 殷钢矛",
-                        " Whether to register the Curiosities invar spear",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_invar_spear", true);
+//        ENABLE_CURIOSITIES_ALUMINUM_SPEAR = builder
+//                .comment("是否注册 Curiosities 铝矛",
+//                        " Whether to register the Curiosities aluminum spear",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_aluminum_spear", true);
+//        ENABLE_CURIOSITIES_INVAR_SPEAR = builder
+//                .comment("是否注册 Curiosities 殷钢矛",
+//                        " Whether to register the Curiosities invar spear",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_invar_spear", true);
         ENABLE_LEGENDARY_MONSTERS_ENDERITIUM_SPEAR = builder
                 .comment("是否注册 Legendary Monsters 终末金属矛",
                         " Whether to register the Legendary Monsters enderitium spear",
@@ -310,18 +310,18 @@ public class EquipmentConfig {
                         "默认：启用",
                         " Default：true")
                 .define("aeternium_horse_armor", true);
-        ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR = builder
-                .comment("是否注册 Curiosities 旅行者马铠（铝）",
-                        " Whether to register the Curiosities traveler's horse armor (aluminum)",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_aluminum_horse_armor", true);
-        ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR = builder
-                .comment("是否注册 Curiosities 殷钢马铠",
-                        " Whether to register the Curiosities invar horse armor",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_invar_horse_armor", true);
+//        ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR = builder
+//                .comment("是否注册 Curiosities 旅行者马铠（铝）",
+//                        " Whether to register the Curiosities traveler's horse armor (aluminum)",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_aluminum_horse_armor", true);
+//        ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR = builder
+//                .comment("是否注册 Curiosities 殷钢马铠",
+//                        " Whether to register the Curiosities invar horse armor",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_invar_horse_armor", true);
         ENABLE_CANDC_SANGUINE_HORSE_ARMOR = builder
                 .comment("是否注册 Caverns & Chasms 血裔马铠",
                         " Whether to register the Caverns & Chasms sanguine horse armor",
@@ -398,18 +398,18 @@ public class EquipmentConfig {
                         "默认：启用",
                         " Default：true")
                 .define("aeternium_nautilus_armor", true);
-        ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR = builder
-                .comment("是否注册 Curiosities 旅行者鹦鹉螺铠（铝）",
-                        " Whether to register the Curiosities traveler's nautilus armor (aluminum)",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_aluminum_nautilus_armor", true);
-        ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR = builder
-                .comment("是否注册 Curiosities 殷钢鹦鹉螺铠",
-                        " Whether to register the Curiosities invar nautilus armor",
-                        "默认：启用",
-                        " Default：true")
-                .define("curiosities_invar_nautilus_armor", true);
+//        ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR = builder
+//                .comment("是否注册 Curiosities 旅行者鹦鹉螺铠（铝）",
+//                        " Whether to register the Curiosities traveler's nautilus armor (aluminum)",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_aluminum_nautilus_armor", true);
+//        ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR = builder
+//                .comment("是否注册 Curiosities 殷钢鹦鹉螺铠",
+//                        " Whether to register the Curiosities invar nautilus armor",
+//                        "默认：启用",
+//                        " Default：true")
+//                .define("curiosities_invar_nautilus_armor", true);
         ENABLE_CANDC_SANGUINE_NAUTILUS_ARMOR = builder
                 .comment("是否注册 Caverns & Chasms 血裔鹦鹉螺铠",
                         " Whether to register the Caverns & Chasms sanguine nautilus armor",

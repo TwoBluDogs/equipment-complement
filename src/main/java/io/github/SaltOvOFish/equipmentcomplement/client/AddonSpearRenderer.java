@@ -76,8 +76,8 @@ public class AddonSpearRenderer implements ItemRendererRegistry.Renderer {
         add(set, SpearRegistry.CANDC_WAXED_EXPOSED_COPPER_SPEAR);
         add(set, SpearRegistry.CANDC_WAXED_WEATHERED_COPPER_SPEAR);
         add(set, SpearRegistry.CANDC_WAXED_OXIDIZED_COPPER_SPEAR);
-        add(set, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
-        add(set, SpearRegistry.CURIOSITIES_INVAR_SPEAR);
+//        add(set, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
+//        add(set, SpearRegistry.CURIOSITIES_INVAR_SPEAR);
         add(set, SpearRegistry.LEGENDARY_MONSTERS_ENDERITIUM_SPEAR);
         return set;
     }

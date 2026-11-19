@@ -43,8 +43,9 @@ public final class SpearRegistry {
     public static DeferredItem<Item> CANDC_WAXED_WEATHERED_COPPER_SPEAR;
     public static DeferredItem<Item> CANDC_WAXED_OXIDIZED_COPPER_SPEAR;
 
-    public static DeferredItem<Item> CURIOSITIES_ALUMINUM_SPEAR;
-    public static DeferredItem<Item> CURIOSITIES_INVAR_SPEAR;
+//    public static DeferredItem<Item> CURIOSITIES_ALUMINUM_SPEAR;
+//    public static DeferredItem<Item> CURIOSITIES_INVAR_SPEAR;
+
     public static DeferredItem<Item> LEGENDARY_MONSTERS_ENDERITIUM_SPEAR;
 
     /**
@@ -127,16 +128,16 @@ public final class SpearRegistry {
                 }
             }
         }
-        if (ModList.get().isLoaded("curiosities")) {
-            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_SPEAR.get()) {
-                CURIOSITIES_ALUMINUM_SPEAR = ItemRegistries.CURIOSITIES.register("aluminum_spear",
-                        () -> makeSpear(aluminumTier(), 1.15F, LIGHT));
-            }
-            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_SPEAR.get()) {
-                CURIOSITIES_INVAR_SPEAR = ItemRegistries.CURIOSITIES.register("invar_spear",
-                        () -> makeSpear(invarTier(), 0.87F, HEAVY));
-            }
-        }
+//        if (ModList.get().isLoaded("curiosities")) {
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_SPEAR.get()) {
+//                CURIOSITIES_ALUMINUM_SPEAR = ItemRegistries.CURIOSITIES.register("aluminum_spear",
+//                        () -> makeSpear(aluminumTier(), 1.15F, LIGHT));
+//            }
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_SPEAR.get()) {
+//                CURIOSITIES_INVAR_SPEAR = ItemRegistries.CURIOSITIES.register("invar_spear",
+//                        () -> makeSpear(invarTier(), 0.87F, HEAVY));
+//            }
+//        }
         if (ModList.get().isLoaded("legendary_monsters")) {
             if (EquipmentConfig.ENABLE_LEGENDARY_MONSTERS_ENDERITIUM_SPEAR.get()) {
                 LEGENDARY_MONSTERS_ENDERITIUM_SPEAR = ItemRegistries.LEGENDARY_MONSTERS.register("enderitium_spear",
@@ -158,11 +159,11 @@ public final class SpearRegistry {
         // 铝矛：长矛的攻击距离来自 ATTACK_RANGE 组件（优先级高于 entity_interaction_range 属性），
         // 因此要让 +2 交互距离在攻击上同步生效，必须把组件的 reach 也各 +2。
         // 原版长矛：min 2.0 / max 4.5 / 创造 min 2.0 / 创造 max 6.5 / 命中箱 0.125 / mob 0.5
-        if (CURIOSITIES_ALUMINUM_SPEAR != null) {
-            event.modify(CURIOSITIES_ALUMINUM_SPEAR.get(),
-                    builder -> builder.set(ModDataComponents.ATTACK_RANGE.get(),
-                            new AttackRange(2.0F, 6.5F, 2.0F, 8.5F, 0.125F, 0.5F)));
-        }
+//        if (CURIOSITIES_ALUMINUM_SPEAR != null) {
+//            event.modify(CURIOSITIES_ALUMINUM_SPEAR.get(),
+//                    builder -> builder.set(ModDataComponents.ATTACK_RANGE.get(),
+//                            new AttackRange(2.0F, 6.5F, 2.0F, 8.5F, 0.125F, 0.5F)));
+//        }
     }
 
     // ==================== 构造与工具等级 ====================
@@ -222,13 +223,13 @@ public final class SpearRegistry {
         return netheriteLikeTier(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, "caverns_and_chasms", "necromium_ingot");
     }
 
-    private static Tier invarTier() {
-        return netheriteLikeTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, "curiosities", "invar_ingot");
-    }
+//    private static Tier invarTier() {
+//        return netheriteLikeTier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, "curiosities", "invar_ingot");
+//    }
 
-    private static Tier aluminumTier() {
-        return tier(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 8.0F, 2.0F, 14, "curiosities", "aluminum_ingot");
-    }
+//    private static Tier aluminumTier() {
+//        return tier(BlockTags.INCORRECT_FOR_IRON_TOOL, 250, 8.0F, 2.0F, 14, "curiosities", "aluminum_ingot");
+//    }
 
     private static Tier enderitiumTier() {
         return tier(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2450, 9.0F, 3.5F, 15, "legendary_monsters", "enderitium_ingot");

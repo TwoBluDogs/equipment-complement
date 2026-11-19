@@ -42,8 +42,8 @@ public final class NautilusArmorRegistry {
             DeferredRegister.create(Registries.ARMOR_MATERIAL, "caverns_and_chasms");
     private static final DeferredRegister<ArmorMaterial> BETTEREND_MATERIALS =
             DeferredRegister.create(Registries.ARMOR_MATERIAL, "betterend");
-    private static final DeferredRegister<ArmorMaterial> CURIOSITIES_MATERIALS =
-            DeferredRegister.create(Registries.ARMOR_MATERIAL, "curiosities");
+//    private static final DeferredRegister<ArmorMaterial> CURIOSITIES_MATERIALS =
+//            DeferredRegister.create(Registries.ARMOR_MATERIAL, "curiosities");
 
     // ===== Minecraft =====
     public static DeferredItem<Item> LEATHER_NAUTILUS_ARMOR;
@@ -85,10 +85,10 @@ public final class NautilusArmorRegistry {
     public static DeferredItem<Item> CRYSTALITE_NAUTILUS_ARMOR;
 
     // ===== Curiosities =====
-    public static DeferredHolder<ArmorMaterial, ArmorMaterial> ALUMINUM_MATERIAL;
-    public static DeferredHolder<ArmorMaterial, ArmorMaterial> INVAR_MATERIAL;
-    public static DeferredItem<Item> ALUMINUM_NAUTILUS_ARMOR;
-    public static DeferredItem<Item> INVAR_NAUTILUS_ARMOR;
+//    public static DeferredHolder<ArmorMaterial, ArmorMaterial> ALUMINUM_MATERIAL;
+//    public static DeferredHolder<ArmorMaterial, ArmorMaterial> INVAR_MATERIAL;
+//    public static DeferredItem<Item> ALUMINUM_NAUTILUS_ARMOR;
+//    public static DeferredItem<Item> INVAR_NAUTILUS_ARMOR;
 
     // ===== Caverns & Chasms：血裔 =====
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SANGUINE_MATERIAL;
@@ -200,26 +200,26 @@ public final class NautilusArmorRegistry {
             }
         }
 
-        if (ModList.get().isLoaded("curiosities")) {
-            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR.get()) {
-                ALUMINUM_MATERIAL = ArmorMaterials.register(CURIOSITIES_MATERIALS, "aluminum_nautilus_armor",
-                        5, 15, SoundEvents.ARMOR_EQUIP_IRON, "curiosities", "aluminum_ingot", 0.0F, 0.0F);
-                ALUMINUM_NAUTILUS_ARMOR = nautilusArmor(ItemRegistries.CURIOSITIES, "aluminum_nautilus_armor",
-                        ALUMINUM_MATERIAL, false);
-            }
-            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR.get()) {
-                INVAR_MATERIAL = ArmorMaterials.register(CURIOSITIES_MATERIALS, "invar_nautilus_armor",
-                        19, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, "curiosities", "invar_ingot", 1.0F, 0.0F);
-                INVAR_NAUTILUS_ARMOR = nautilusArmor(ItemRegistries.CURIOSITIES, "invar_nautilus_armor",
-                        INVAR_MATERIAL, true);
-            }
-        }
+//        if (ModList.get().isLoaded("curiosities")) {
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_NAUTILUS_ARMOR.get()) {
+//                ALUMINUM_MATERIAL = ArmorMaterials.register(CURIOSITIES_MATERIALS, "aluminum_nautilus_armor",
+//                        5, 15, SoundEvents.ARMOR_EQUIP_IRON, "curiosities", "aluminum_ingot", 0.0F, 0.0F);
+//                ALUMINUM_NAUTILUS_ARMOR = nautilusArmor(ItemRegistries.CURIOSITIES, "aluminum_nautilus_armor",
+//                        ALUMINUM_MATERIAL, false);
+//            }
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_NAUTILUS_ARMOR.get()) {
+//                INVAR_MATERIAL = ArmorMaterials.register(CURIOSITIES_MATERIALS, "invar_nautilus_armor",
+//                        19, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, "curiosities", "invar_ingot", 1.0F, 0.0F);
+//                INVAR_NAUTILUS_ARMOR = nautilusArmor(ItemRegistries.CURIOSITIES, "invar_nautilus_armor",
+//                        INVAR_MATERIAL, true);
+//            }
+//        }
 
         MINECRAFT_MATERIALS.register(modEventBus);
         OREGANIZED_MATERIALS.register(modEventBus);
         CAVERNS_MATERIALS.register(modEventBus);
         BETTEREND_MATERIALS.register(modEventBus);
-        CURIOSITIES_MATERIALS.register(modEventBus);
+//        CURIOSITIES_MATERIALS.register(modEventBus);
     }
 
     // ===== 辅助方法 =====

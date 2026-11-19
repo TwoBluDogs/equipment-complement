@@ -37,8 +37,8 @@ public final class HorseArmorRegistry {
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> AETERNIUM_MATERIAL;
     /** 融晶：防御值走 {@link ItemAttributeEvents}，材质本身不提供面板数值。 */
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> CRYSTALITE_MATERIAL;
-    public static DeferredHolder<ArmorMaterial, ArmorMaterial> ALUMINUM_MATERIAL;
-    public static DeferredHolder<ArmorMaterial, ArmorMaterial> INVAR_MATERIAL;
+//    public static DeferredHolder<ArmorMaterial, ArmorMaterial> ALUMINUM_MATERIAL;
+//    public static DeferredHolder<ArmorMaterial, ArmorMaterial> INVAR_MATERIAL;
     public static DeferredHolder<ArmorMaterial, ArmorMaterial> SANGUINE_MATERIAL;
 
     // ===== 马铠物品 =====
@@ -49,8 +49,8 @@ public final class HorseArmorRegistry {
     public static DeferredItem<Item> TERMINITE_HORSE_ARMOR;
     public static DeferredItem<Item> AETERNIUM_HORSE_ARMOR;
     public static DeferredItem<Item> CRYSTALITE_HORSE_ARMOR;
-    public static DeferredItem<Item> ALUMINUM_HORSE_ARMOR;
-    public static DeferredItem<Item> INVAR_HORSE_ARMOR;
+//    public static DeferredItem<Item> ALUMINUM_HORSE_ARMOR;
+//    public static DeferredItem<Item> INVAR_HORSE_ARMOR;
     public static DeferredItem<Item> SANGUINE_HORSE_ARMOR;
 
     private HorseArmorRegistry() {
@@ -106,20 +106,20 @@ public final class HorseArmorRegistry {
             }
         }
 
-        if (ModList.get().isLoaded("curiosities")) {
-            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR.get()) {
-                ALUMINUM_MATERIAL = ArmorMaterials.register(ARMOR_MATERIALS, "aluminum_horse_armor",
-                        5, 15, SoundEvents.ARMOR_EQUIP_IRON, "curiosities", "aluminum_ingot", 0.0F, 0.0F);
-                ALUMINUM_HORSE_ARMOR = horseArmor(ItemRegistries.CURIOSITIES, "aluminum_horse_armor",
-                        ALUMINUM_MATERIAL, "horse_armor_aluminum.png", false);
-            }
-            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR.get()) {
-                INVAR_MATERIAL = ArmorMaterials.register(ARMOR_MATERIALS, "invar_horse_armor",
-                        19, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, "curiosities", "invar_ingot", 1.0F, 0.0F);
-                INVAR_HORSE_ARMOR = horseArmor(ItemRegistries.CURIOSITIES, "invar_horse_armor",
-                        INVAR_MATERIAL, "horse_armor_invar.png", true);
-            }
-        }
+//        if (ModList.get().isLoaded("curiosities")) {
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_ALUMINUM_HORSE_ARMOR.get()) {
+//                ALUMINUM_MATERIAL = ArmorMaterials.register(ARMOR_MATERIALS, "aluminum_horse_armor",
+//                        5, 15, SoundEvents.ARMOR_EQUIP_IRON, "curiosities", "aluminum_ingot", 0.0F, 0.0F);
+//                ALUMINUM_HORSE_ARMOR = horseArmor(ItemRegistries.CURIOSITIES, "aluminum_horse_armor",
+//                        ALUMINUM_MATERIAL, "horse_armor_aluminum.png", false);
+//            }
+//            if (EquipmentConfig.ENABLE_CURIOSITIES_INVAR_HORSE_ARMOR.get()) {
+//                INVAR_MATERIAL = ArmorMaterials.register(ARMOR_MATERIALS, "invar_horse_armor",
+//                        19, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, "curiosities", "invar_ingot", 1.0F, 0.0F);
+//                INVAR_HORSE_ARMOR = horseArmor(ItemRegistries.CURIOSITIES, "invar_horse_armor",
+//                        INVAR_MATERIAL, "horse_armor_invar.png", true);
+//            }
+//        }
         if (ModList.get().isLoaded("caverns_and_chasms")) {
             if (EquipmentConfig.ENABLE_CANDC_SANGUINE_HORSE_ARMOR.get()) {
                 SANGUINE_MATERIAL = ArmorMaterials.register(ARMOR_MATERIALS, "sanguine_horse_armor",

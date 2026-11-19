@@ -139,10 +139,10 @@ public class CreativeTabEvents {
             anchor = tab.chain(anchor, SpearRegistry.CANDC_WAXED_WEATHERED_COPPER_SPEAR);
             tab.chain(anchor, SpearRegistry.CANDC_WAXED_OXIDIZED_COPPER_SPEAR);
         }
-        anchor = tab.chain(mc("golden_spear"), SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
+//        anchor = tab.chain(mc("golden_spear"), SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR);
         anchor = tab.chain(anchor, SpearRegistry.OREGANIZED_SILVER_SPEAR);
         anchor = tab.chain(anchor, SpearRegistry.CANDC_SILVER_SPEAR);
-        anchor = tab.chain(mc("diamond_spear"), SpearRegistry.CURIOSITIES_INVAR_SPEAR);
+//        anchor = tab.chain(mc("diamond_spear"), SpearRegistry.CURIOSITIES_INVAR_SPEAR);
         anchor = tab.chain(anchor, SpearRegistry.OREGANIZED_ELECTRUM_SPEAR);
         tab.chain(mc("netherite_spear"), SpearRegistry.CANDC_NECROMIUM_SPEAR);
 
@@ -160,10 +160,10 @@ public class CreativeTabEvents {
         }
         anchor = tab.insert(mc("copper_horse_armor"), candcCopperHorse);
         anchor = tab.chain(anchor, HorseArmorRegistry.CHAINMAIL_HORSE_ARMOR);
-        anchor = tab.chain(mc("golden_horse_armor"), HorseArmorRegistry.ALUMINUM_HORSE_ARMOR);
+//        anchor = tab.chain(mc("golden_horse_armor"), HorseArmorRegistry.ALUMINUM_HORSE_ARMOR);
         anchor = tab.chain(anchor, HorseArmorRegistry.SILVER_HORSE_ARMOR);
         anchor = tab.insert(anchor, candcSilverHorse);
-        anchor = tab.chain(mc("diamond_horse_armor"), HorseArmorRegistry.INVAR_HORSE_ARMOR);
+//        anchor = tab.chain(mc("diamond_horse_armor"), HorseArmorRegistry.INVAR_HORSE_ARMOR);
         anchor = tab.chain(anchor, HorseArmorRegistry.ELECTRUM_HORSE_ARMOR);
         // 开启 C&C 下界合金马铠时，死灵合金马铠的锚点要换成 C&C 版
         Item netheriteHorseAnchor = EquipmentConfig.CANDC_NETHERITE_HORSE_ARMOR.get()
@@ -188,10 +188,10 @@ public class CreativeTabEvents {
             anchor = tab.chain(anchor, NautilusArmorRegistry.CANDC_WAXED_OXIDIZED_COPPER_NAUTILUS_ARMOR);
         }
         anchor = tab.chain(anchor, NautilusArmorRegistry.CHAINMAIL_NAUTILUS_ARMOR);
-        anchor = tab.chain(mc("golden_nautilus_armor"), NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR);
+//        anchor = tab.chain(mc("golden_nautilus_armor"), NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR);
         anchor = tab.chain(mc("iron_nautilus_armor"), NautilusArmorRegistry.OREGANIZED_SILVER_NAUTILUS_ARMOR);
         anchor = tab.chain(anchor, NautilusArmorRegistry.CANDC_SILVER_NAUTILUS_ARMOR);
-        anchor = tab.chain(mc("diamond_nautilus_armor"), NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR);
+//        anchor = tab.chain(mc("diamond_nautilus_armor"), NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR);
         anchor = tab.chain(anchor, NautilusArmorRegistry.OREGANIZED_ELECTRUM_NAUTILUS_ARMOR);
         anchor = tab.chain(mc("netherite_nautilus_armor"), NautilusArmorRegistry.CANDC_NECROMIUM_NAUTILUS_ARMOR);
         tab.chain(anchor, NautilusArmorRegistry.SANGUINE_NAUTILUS_ARMOR);

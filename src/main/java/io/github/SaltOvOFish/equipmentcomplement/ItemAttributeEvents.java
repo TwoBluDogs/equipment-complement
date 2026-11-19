@@ -84,19 +84,19 @@ public class ItemAttributeEvents {
 
     // ==================== Curiosities 兼容效果 ====================
     /** 铝矛：+2 实体交互距离（近战突刺距离另见 {@link SpearRegistry#onModifyComponents}）。 */
-    private static final AttributeModifier ALUMINUM_SPEAR_ENTITY_RANGE =
-            add("aluminum_spear_entity_range", 2.0D);
+//    private static final AttributeModifier ALUMINUM_SPEAR_ENTITY_RANGE =
+//            add("aluminum_spear_entity_range", 2.0D);
     /** 殷钢矛：+15% 护甲穿透（curiosities 属性，基准 1.0）。 */
-    private static final AttributeModifier INVAR_SPEAR_ARMOR_PIERCING =
-            multipliedBase("invar_spear_armor_piercing", 0.15D);
+//    private static final AttributeModifier INVAR_SPEAR_ARMOR_PIERCING =
+//            multipliedBase("invar_spear_armor_piercing", 0.15D);
     /** 旅行者坐骑铠（铝）：+15% 移动速度、+15% 跳跃力度（鹦鹉螺骑乘冲刺同步按跳跃力度加成，见 AbstractNautilusMixin）。 */
-    private static final AttributeModifier TRAVELER_MOUNT_ARMOR_SPEED =
-            multipliedBase("traveler_mount_armor_speed", 0.15D);
-    private static final AttributeModifier TRAVELER_MOUNT_ARMOR_JUMP =
-            multipliedBase("traveler_mount_armor_jump", 0.15D);
+//    private static final AttributeModifier TRAVELER_MOUNT_ARMOR_SPEED =
+//            multipliedBase("traveler_mount_armor_speed", 0.15D);
+//    private static final AttributeModifier TRAVELER_MOUNT_ARMOR_JUMP =
+//            multipliedBase("traveler_mount_armor_jump", 0.15D);
     /** 殷钢坐骑铠：0.25 点伤害减免（curiosities 属性，直接减免）。 */
-    private static final AttributeModifier INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION =
-            add("invar_mount_armor_damage_reduction", 0.25D);
+//    private static final AttributeModifier INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION =
+//            add("invar_mount_armor_damage_reduction", 0.25D);
 
     // ==================== 物品 → 处理函数 ====================
     @FunctionalInterface
@@ -130,24 +130,24 @@ public class ItemAttributeEvents {
         Map<Item, Handler> map = new IdentityHashMap<>();
 
         // ==================== 长矛 ====================
-        put(map, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR,
-                event -> event.addModifier(Attributes.ENTITY_INTERACTION_RANGE, ALUMINUM_SPEAR_ENTITY_RANGE, MAINHAND));
-        put(map, SpearRegistry.CURIOSITIES_INVAR_SPEAR, event -> {
-            if (armorPiercing != null) event.addModifier(armorPiercing, INVAR_SPEAR_ARMOR_PIERCING, MAINHAND);
-        });
+//        put(map, SpearRegistry.CURIOSITIES_ALUMINUM_SPEAR,
+//                event -> event.addModifier(Attributes.ENTITY_INTERACTION_RANGE, ALUMINUM_SPEAR_ENTITY_RANGE, MAINHAND));
+//        put(map, SpearRegistry.CURIOSITIES_INVAR_SPEAR, event -> {
+//            if (armorPiercing != null) event.addModifier(armorPiercing, INVAR_SPEAR_ARMOR_PIERCING, MAINHAND);
+//        });
 
         // ==================== 马铠 ====================
         put(map, HorseArmorRegistry.SILVER_HORSE_ARMOR,
                 event -> addAttribute(event, invincibility, SILVER_HORSE_ARMOR_INVINCIBILITY));
         put(map, HorseArmorRegistry.ELECTRUM_HORSE_ARMOR,
                 event -> event.addModifier(Attributes.MOVEMENT_SPEED, ELECTRUM_HORSE_ARMOR_SPEED, BODY));
-        put(map, HorseArmorRegistry.ALUMINUM_HORSE_ARMOR, event -> {
-            event.addModifier(Attributes.MOVEMENT_SPEED, TRAVELER_MOUNT_ARMOR_SPEED, BODY);
-            event.addModifier(Attributes.JUMP_STRENGTH, TRAVELER_MOUNT_ARMOR_JUMP, BODY);
-        });
-        put(map, HorseArmorRegistry.INVAR_HORSE_ARMOR, event -> {
-            if (damageReduction != null) event.addModifier(damageReduction, INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION, BODY);
-        });
+//        put(map, HorseArmorRegistry.ALUMINUM_HORSE_ARMOR, event -> {
+//            event.addModifier(Attributes.MOVEMENT_SPEED, TRAVELER_MOUNT_ARMOR_SPEED, BODY);
+//            event.addModifier(Attributes.JUMP_STRENGTH, TRAVELER_MOUNT_ARMOR_JUMP, BODY);
+//        });
+//        put(map, HorseArmorRegistry.INVAR_HORSE_ARMOR, event -> {
+//            if (damageReduction != null) event.addModifier(damageReduction, INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION, BODY);
+//        });
         // BetterEnd 融晶马铠：护甲 9.4 / 韧性 0.96 / 抗击退 0（+1 生命恢复见 MountArmorEffects；血裔同理）
         put(map, HorseArmorRegistry.CRYSTALITE_HORSE_ARMOR,
                 event -> setExact(event, CRYSTALITE_HORSE_ARMOR_ARMOR, CRYSTALITE_HORSE_ARMOR_TOUGHNESS));
@@ -172,13 +172,13 @@ public class ItemAttributeEvents {
                 event -> addAttribute(event, magicProtection, SILVER_NAUTILUS_ARMOR_MAGIC_PROTECTION));
         put(map, NautilusArmorRegistry.OREGANIZED_ELECTRUM_NAUTILUS_ARMOR,
                 event -> event.addModifier(Attributes.MOVEMENT_SPEED, ELECTRUM_NAUTILUS_ARMOR_SPEED, BODY));
-        put(map, NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR, event -> {
-            event.addModifier(Attributes.MOVEMENT_SPEED, TRAVELER_MOUNT_ARMOR_SPEED, BODY);
-            event.addModifier(Attributes.JUMP_STRENGTH, TRAVELER_MOUNT_ARMOR_JUMP, BODY);
-        });
-        put(map, NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR, event -> {
-            if (damageReduction != null) event.addModifier(damageReduction, INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION, BODY);
-        });
+//        put(map, NautilusArmorRegistry.ALUMINUM_NAUTILUS_ARMOR, event -> {
+//            event.addModifier(Attributes.MOVEMENT_SPEED, TRAVELER_MOUNT_ARMOR_SPEED, BODY);
+//            event.addModifier(Attributes.JUMP_STRENGTH, TRAVELER_MOUNT_ARMOR_JUMP, BODY);
+//        });
+//        put(map, NautilusArmorRegistry.INVAR_NAUTILUS_ARMOR, event -> {
+//            if (damageReduction != null) event.addModifier(damageReduction, INVAR_MOUNT_ARMOR_DAMAGE_REDUCTION, BODY);
+//        });
         put(map, NautilusArmorRegistry.CANDC_NECROMIUM_NAUTILUS_ARMOR,
                 event -> addAttribute(event, slownessRetribution, NECROMIUM_NAUTILUS_ARMOR_SLOWNESS));
         putCopperNautilusArmor(map);
